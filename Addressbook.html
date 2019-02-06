@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <script>
+       
+        
+        function myFilterFunction() {
+            var input, filter, ul, li, i, txtValue;
+            input = document.getElementById("myFilterBox");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myList");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                txtValue = li[i].innerHTML;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+       
+        }
+    </script>
+</head>
+
+<body>
+    <style>
+    body {
+        background-color: rgb(240, 254, 255);
+    }
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the list items */
+ul li {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #e2df0d;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  position: relative;
+}
+
+    </style>
+    <h3><b>Adresboek</b></h3>
+    <input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="Filter... ">
+    <button>Zoek</button>
+
+    
+    <table id="myList" boreder="2" width=100%>
+        <tr>
+            
+            <td><li>Alex<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+            <td><li>Anke<a href = "https://www.google.com/maps/@52.2326099,6.8803065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="women.jpg" width="100" height="100"><br>Adres</a></li></td>
+            <td><li>Bart<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+            <td><li>Bas<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        
+</tr>
+<tr>
+            
+        <td><li>Bernard<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Chelan<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Christian<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Clemens<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+    
+</tr>
+<tr>
+            
+        
+        <td><li>Constant<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Cristopher<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Dhiradj<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Douglas<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+    
+</tr>
+<tr>
+            
+        
+        <td><li>Eef<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Eline<a href = "https://www.google.com/maps/@52.2326099,6.8803065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="women.jpg" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Frans<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Gerd<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+    
+</tr>
+<tr>
+            
+        <ul>
+        <td><li>Jack<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Jan-Willem<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Jeroen<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Maarten<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+    
+</tr>
+<tr>
+       
+        <td><li>Maha<a href = "https://www.google.com/maps/@52.2326099,6.8803065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="women.jpg" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Marcella<a href = "https://www.google.com/maps/@52.2326099,6.8803065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="women.jpg" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Martijn<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        <td><li>Paul<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+    
+</tr>
+<tr>
+        
+         <td><li>Randalph<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+         <td><li>Rene<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+         <td><li>Richard<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+         <td><li>Semere<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+     
+ </tr>
+ <tr>
+        
+         <td><li>Semhar<a href = "https://www.google.com/maps/@52.2326099,6.8803065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="women.jpg" width="100" height="100"><br>Adres</a></li></td>
+         <td><li>Simone<a href = "https://www.google.com/maps/@52.2326099,6.8803065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="women.jpg" width="100" height="100"><br>Adres</a></li></td>
+         <td><li>Stas<a href = "https://www.google.com/maps/@52.2326099,6.8903065,3a,75y,201.2h,93.55t/data=!3m8!1e1!3m6!1sAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOric38xCufubPnhSDAAmUIGFfN-h7V7ghONI8h%3Dw203-h100-k-no-pi-0-ya357.7271-ro-0-fo100!7i7680!8i3840"><img src="Picjpg.webp" width="100" height="100"><br>Adres</a></li></td>
+        </tr>
+</table>
+   
+</body>
+
+</html>
